@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030712"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ BUDDY AI INTELLIGENCE"
+            android:textColor="#38bdf8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Glowing Central Visual Core -->
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="#0e7490"
+                android:alpha="0.2" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="#1e293b" />
+
+            <ImageView
+                android:id="@+id/ivOrbIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_btn_speak_now" />
+        </FrameLayout>
+
+        <!-- Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0f172a"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvEngineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CORE STATUS: CONNECTED (ONLINE)"
+                android:textColor="#34d399"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvLiveLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System ready. Say or type a command."
+                android:textColor="#f8fafc"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Settings Inputs -->
+        <EditText
+            android:id="@+id/etBackendUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://berry-theatre-works-transcription.trycloudflare.com/"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="#1e293b"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnPermAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Grant Accessibility (For Auto-Send)"
+            android:backgroundTint="#334155"
+            android:textColor="#38bdf8"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etUserCommand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type or speak: whatsapp open kar phir frusty..."
+            android:textColorHint="#64748b"
+            android:textColor="#ffffff"
+            android:background="#1e293b"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎤 Speak"
+                android:backgroundTint="#0284c7"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Execute"
+                android:backgroundTint="#38bdf8"
+                android:textColor="#030712"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

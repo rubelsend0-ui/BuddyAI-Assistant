@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Buddy AI</string>
+    <string name="accessibility_desc">Buddy AI Auto-Send Accessibility Service for WhatsApp</string>
+</resources>

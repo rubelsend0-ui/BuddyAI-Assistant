@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.BuddyAI" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">#030712</item>
+        <item name="android:navigationBarColor">#030712</item>
+        <item name="android:windowBackground">#030712</item>
+    </style>
+</resources>
